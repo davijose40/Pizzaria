@@ -1,6 +1,6 @@
 
 <!-- badges -->
-[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/davijose40/Pizzaria.git) [![GitHub license](https://img.shields.io/github/license/DaviJose/StrapDown.js.svg)](https://github.com/davijose40/Pizzaria/blob/master/package.json)
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/davijose40/Pizzaria.git) [![GitHub license](https://img.shields.io/github/license/DaviJose/StrapDown.js.svg)](https://github.com/davijose40/Pizzaria/blob/master/LICENSE)
 
 <!-- name the thing -->
 # Pizzaria
