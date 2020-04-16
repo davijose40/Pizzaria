@@ -1,6 +1,7 @@
 
 <!-- badges -->
-[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/davijose40/Pizzaria.git) [![GitHub license](https://img.shields.io/github/license/davijose40/Pizzaria.svg)](https://github.com/davijose40/Pizzaria/blob/master/LICENSE)
+![GitHub repo size](https://img.shields.io/github/repo-size/davijose40/Pizzaria)
+![GitHub](https://img.shields.io/github/license/davijose40/Pizzaria)
 
 <!-- name the thing -->
 # Pizzaria
