@@ -2,6 +2,7 @@
 <!-- badges -->
 ![GitHub repo size](https://img.shields.io/github/repo-size/davijose40/Pizzaria)
 ![GitHub](https://img.shields.io/github/license/davijose40/Pizzaria)
+![Twitter Follow](https://img.shields.io/twitter/follow/Jose40Davi?label=davijose40&style=social)
 
 
 <!-- name the thing -->
