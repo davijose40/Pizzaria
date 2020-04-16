@@ -1,6 +1,7 @@
 
 <!-- badges -->
 ![GitHub repo size](https://img.shields.io/github/repo-size/davijose40/Pizzaria)
+![GitHub](https://img.shields.io/github/license/davijose40/Pizzaria)
 
 
 <!-- name the thing -->
