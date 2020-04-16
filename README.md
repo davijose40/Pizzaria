@@ -1,6 +1,6 @@
 
 <!-- badges -->
-[![Version](https://img.shields.io/npm/v/express?label=Express)] [https://img.shields.io/twitter/url?label=davijose&style=social&url=https%3A%2F%2Ftwitter.com%2FJose40Davi]
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/davijose40/Pizzaria.git) [![GitHub license](https://img.shields.io/github/license/DaviJose/StrapDown.js.svg)](https://github.com/davijose40/Pizzaria/blob/master/package.json)
 
 <!-- name the thing -->
 # Pizzaria
