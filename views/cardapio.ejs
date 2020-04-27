@@ -5,25 +5,29 @@
 
   <!--active section -> hero -->
   <div class="container mt-5">
-    .<div class="card-deck">
-      <% listaPizzas.map((pizza, index) =>  { %>
-      <div class="card" style="width: 18rem;">
-        <img src="/images/<%= pizza.img %> " class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title text-center"><%= pizza.nome %> </h5>
-          <p class="card-text text-center">preço: R$ <%= pizza.preco %> </p>
-          <a href="#" class="btn btn-sm btn-block btn-success mb-2">Comprar</a>
-          <div class="d-flex justify-content-between">
-            <a href="/editar" class="btn btn-sm btn-outline-warning">Editar</a>
-            <form action="/cardapio/apagar/<%= index %>?_method=DELETE" method="POST">
-              <button type="submit" class="btn btn-sm btn-outline-danger ml-3">Apagar</button>
-            </form>
+    <% if (listaPizzas && listaPizzas.length > 0) {%>
+      <div class="card-deck">
+        <% listaPizzas.map((pizza, index) =>  { %>
+        <div class="card" style="width: 18rem;">
+          <img src="/images/<%= pizza.img %> " class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center"><%= pizza.nome %> </h5>
+            <p class="card-text text-center">preço: R$ <%= pizza.preco %> </p>
+            <a href="#" class="btn btn-sm btn-block btn-success mb-2">Comprar</a>
+            <div class="d-flex justify-content-between">
+              <a href="/editar" class="btn btn-sm btn-outline-warning">Editar</a>
+              <form action="/cardapio/apagar/<%= index %>?_method=DELETE" method="POST">
+                <button type="submit" class="btn btn-sm btn-outline-danger ml-3">Apagar</button>
+              </form>
+            </div>
           </div>
         </div>
+        <% }) %>
       </div>
-      <% }) %>
-    </div>
-    <a href="/cadastrar" class="">Cadastrar Pizza</a>
+      <% } else { %>
+        <!-- empty listaPizzas   -->
+        <a href="/cardapio/cadastrar" class="">Cadastrar Pizza</a>
+    <% } %>  
   </div>
 
 

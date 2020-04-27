@@ -4,10 +4,24 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const methodOverride = require('method-override');
+const multer = require('multer');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const cardapioRouter = require('./routes/cardarpio');
+
+// multer config, change place!
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, '/images');
+  },
+  filename: (req, file, cb) => {
+    const uniqueSuffix = `${Date.now()}-${Math.round(Math.random() * 1e9)}`;
+    cb(null, `${file.fieldname}-${uniqueSuffix}`);
+  },
+});
+
+const upload = multer({ storage });
 
 const app = express();
 
@@ -45,3 +59,6 @@ app.use((err, req, res, next) => {
 });
 
 module.exports = app;
+
+// TODO
+// aula virtual zoom modulo express II dia 08/abril, envio de email.

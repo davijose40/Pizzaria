@@ -11,6 +11,12 @@ const cardapioController = {
     const listaPizzas = Cardapio.listarPizzas();
     return res.render('cardapio', { listaPizzas });
   },
+  cadastrarViewForm: (req, res) => {
+    return res.render('cadastroViewForm');
+  },
+  cadastrarModel: (req, res) => {
+    console.log(req);
+  },
 };
 
 module.exports = cardapioController;
