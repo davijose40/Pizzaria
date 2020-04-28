@@ -6,10 +6,13 @@
   <!--active section -> hero -->
   <div class="container mt-5">
     <% if (listaPizzas && listaPizzas.length > 0) {%>
-      <div class="card-deck">
+    <div class="clear-fix">
+      <div class="card-deck" style="display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: .5rem;">
         <% listaPizzas.map((pizza, index) =>  { %>
-        <div class="card" style="width: 18rem;">
-          <img src="/images/<%= pizza.img %> " class="card-img-top" alt="...">
+        <div class="card" style="">
+          <img src="/images/<%= pizza.img %> " class="card-img-top" alt="..." style="width: 100%;">
           <div class="card-body">
             <h5 class="card-title text-center"><%= pizza.nome %> </h5>
             <p class="card-text text-center">preço: R$ <%= pizza.preco %> </p>
@@ -24,10 +27,11 @@
         </div>
         <% }) %>
       </div>
-      <% } else { %>
-        <!-- empty listaPizzas   -->
-        <a href="/cardapio/cadastrar" class="">Cadastrar Pizza</a>
-    <% } %>  
+    </div>
+    <% } else { %>
+    <!-- empty listaPizzas   -->
+    <a href="/cardapio/cadastrar" class="">Cadastrar Pizza</a>
+    <% } %>
   </div>
 
 

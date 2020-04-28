@@ -1,7 +1,7 @@
   <!-- partials head -->
   <%- include('partials/head', { title: "Pizzaria Express"}) %>
   <!-- navbar -->
-  <%- include('partials/navbar')%> 
+  <%- include('partials/navbar')%>
 
   <!--active section -> hero -->
   <div class="container d-flex justify-content-center">
@@ -21,14 +21,24 @@
           </div>
           <div class="form-group">
             <label for="imgPizza">Imagem da Pizza: </label>
-            <input type="file" name="imgPizza" id="imgPizza" style="width: 90px;"> 
+            <input type="file" name="imgPizza" id="imgPizza">
           </div>
-          <button class="btn btn-info">Enviar</button>
+          <button type="submit" class="btn btn-info">Enviar</button>
         </form>
       </div>
     </div>
   </div>
 
+    <!-- verifica se foi enviado mensagem de cadastro confirmando -->
+    <!-- link para voltar pagina ver -->
+    <div class="container">
+      <% if(typeof(msg) !== 'undefined') { %>
+      <div class="alert alert-success" role="alert">
+        <%= msg %> <a href="/cardapio/ver" class="alert-link">click aqui para Voltar</a>.
+      </div>
+      <% } %>
+    </div>  
+
 
   <!--scripts -->
-  <%- include('partials/bottomPage') %> 
+  <%- include('partials/bottomPage') %>

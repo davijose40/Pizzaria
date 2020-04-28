@@ -15,7 +15,12 @@ const cardapioController = {
     return res.render('cadastroViewForm');
   },
   cadastrarModel: (req, res) => {
-    console.log(req);
+    const { nomePizza, precoPizza } = req.body;
+    const [imgPizza] = req.files;
+    const img = imgPizza.filename;
+    const resp = Cardapio.cadastrarPizza(nomePizza, precoPizza, img);
+    const msg = resp ? 'Pizza dastrada com sucesso!' : null;
+    return res.render('cadastroViewForm', { msg });
   },
 };
 
